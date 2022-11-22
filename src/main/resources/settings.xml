@@ -1,0 +1,37 @@
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                      http://maven.apache.org/xsd/settings-1.0.0.xsd">
+
+  <activeProfiles>
+    <activeProfile>github</activeProfile>
+  </activeProfiles>
+
+  <profiles>
+    <profile>
+      <id>github</id>
+      <repositories>
+        <repository>
+          <id>central</id>
+          <url>https://repo1.maven.org/maven2</url>
+        </repository>
+        <repository>
+          <id>github</id>
+          <url>https://maven.pkg.github.com/phuc98ute/devstack-packages</url>
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
+        </repository>
+      </repositories>
+    </profile>
+  </profiles>
+
+  <servers>
+    <server>
+      <id>github</id>
+      <username>phuc98ute</username>
+      <password>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</password>
+      <!-- <password>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</password> -->
+    </server>
+  </servers>
+</settings>

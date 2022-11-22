@@ -2,6 +2,6 @@ package com.phucvo.model;
 
 public class Class {
     public String getInfo() {
-        return "Information from Class 1";
+        return "Information from Class 2";
     }
 }

@@ -29,6 +29,6 @@ jobs:
         cache: maven
     - uses: s4u/maven-settings-action@v2.8.0
       with:
-        servers: '[{"id": "github", "username": "${{ secrets.USER_NAME }}", "password": "${{ secrets.ACCESS_TOKEN }}"}]'
+        servers: '[{"id": "github", "username": "${{ secrets.username }}", "password": "${{ secrets.password }}"}]'
     - name: Build with Maven
       run: mvn -B deploy --file pom.xml
